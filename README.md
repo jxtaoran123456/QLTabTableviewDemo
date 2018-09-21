@@ -12,8 +12,9 @@ See `QLTabScrollTableView/TabTableviewDemo.xcodeproj`
 
 <img src="https://github.com/jxtaoran123456/QLTabTableviewDemo/blob/master/image/Snapshots/1.png" width="320"><br/>
 <img src="https://github.com/jxtaoran123456/QLTabTableviewDemo/blob/master/image/Snapshots/2.png" width="320"> <br/>
-<img src="https://github.com/jxtaoran123456/QLTabTableviewDemo/blob/master/image/Snapshots/6.png" width="320"> <br/>
 <img src="https://github.com/jxtaoran123456/QLTabTableviewDemo/blob/master/image/Snapshots/3.png" width="320"><br/>
+<img src="https://github.com/jxtaoran123456/QLTabTableviewDemo/blob/master/image/Snapshots/6.png" width="320"> <br/>
+
 
 Requirements
 ==============
