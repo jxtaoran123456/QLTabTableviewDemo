@@ -165,7 +165,6 @@
     tabTableView.delegate = self;
     tabTableView.navHeight = navHei;
     tabTableView.extraTopHei = 0.f;
-    tabTableView.backgroundColor = [UIColor redColor];
 
     UIView *tabbarView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, tabbarHei)];
     tabbarView.backgroundColor = [UIColor clearColor];
