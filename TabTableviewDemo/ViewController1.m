@@ -463,7 +463,7 @@
 #pragma mark load image action
 - (void)loadImage
 {
-    NSString *urlStr = @"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537524600839&di=68e9a09a1c44d22aaab2e039e5900c53&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201512%2F24%2F20151224004400_kJVZF.jpeg";
+    NSString *urlStr = @"https://raw.githubusercontent.com/jxtaoran123456/QLTabTableviewDemo/master/image/Snapshots/4.jpeg";
     
     NSURL *url = [NSURL URLWithString:[urlStr stringByRemovingPercentEncoding]];
 
@@ -477,10 +477,10 @@
             if(img != nil && img.size.width > 0.f)
             {
                 //适配 adjust
-                CGFloat newHei = view3.frame.size.height * img.size.height/img.size.width;
+                CGFloat newHei = img.size.height*(view3.frame.size.width/img.size.width);
                 view3.frame = CGRectMake(view3.frame.origin.x, view3.frame.origin.y, view3.frame.size.width,newHei);
                 view3.image = img;
-                view3.contentMode = UIViewContentModeScaleAspectFill;
+                view3.contentMode = UIViewContentModeScaleAspectFit;
                 [[NSNotificationCenter defaultCenter] postNotificationName:QLNeedRefreshTableReloadDataNotification object:view3];//刷新 tab table页卡高度
             }
         });

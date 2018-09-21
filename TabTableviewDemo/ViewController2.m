@@ -438,7 +438,7 @@
 #pragma mark load image action
 - (void)loadImage
 {
-    NSURL *url = [NSURL URLWithString:@"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537526867180&di=04b54bcdcce701c5171d05b997b5171e&imgtype=0&src=http%3A%2F%2Fim6.leaderhero.com%2Fwallpaper%2F217%2F34bf40080f464db2a5edd4ba1a348f3c.jpg"];
+    NSURL *url = [NSURL URLWithString:@"https://raw.githubusercontent.com/jxtaoran123456/QLTabTableviewDemo/master/image/Snapshots/5.jpeg"];
     
     dispatch_queue_t queue = dispatch_queue_create("loadImage",NULL);
     dispatch_async(queue, ^{
@@ -450,7 +450,7 @@
             if(img != nil && img.size.width > 0.f)
             {
                 //适配 adjust
-                CGFloat newHei = view3.frame.size.height * img.size.height/img.size.width;
+                CGFloat newHei = img.size.height*(view3.frame.size.width/img.size.width);
                 view3.frame = CGRectMake(view3.frame.origin.x, view3.frame.origin.y, view3.frame.size.width,newHei);
                 view3.image = img;
                 view3.contentMode = UIViewContentModeScaleAspectFill;
