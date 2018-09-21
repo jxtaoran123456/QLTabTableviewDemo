@@ -21,30 +21,31 @@ This library requires `iOS 6.0+` and `Xcode 8.0+`.
 
 Notice
 ==============
+most four view or tableview in the  Horizontal
 
-
+最多使用四个view并列
 
 
 Code Example
 ==============
 
-tabTableView = [[QLTabScrollTableView alloc] initWithFrame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT) vcDelegate:self headScrollType:QLTabHeadNotScrollType];
-tabTableView.delegate = self;
-tabTableView.navHeight = navHei;
-tabTableView.extraTopHei = 0.f;
+tabTableView = [[QLTabScrollTableView alloc] initWithFrame:CGRectMake(0,0,SCREEN_WIDTH,SCREEN_HEIGHT) vcDelegate:self headScrollType:QLTabHeadNotScrollType];<br/>
+tabTableView.delegate = self;<br/>
+tabTableView.navHeight = navHei;<br/>
+tabTableView.extraTopHei = 0.f;<br/>
 
-NSMutableArray *viewArr = [[NSMutableArray alloc]initWithCapacity:3];
-[viewArr addObject:view1];
-[viewArr addObject:view2];
-[viewArr addObject:view3];
-[viewArr addObject:view4];
+NSMutableArray *viewArr = [[NSMutableArray alloc]initWithCapacity:3];<br/>
+[viewArr addObject:view1];<br/>
+[viewArr addObject:view2];<br/>
+[viewArr addObject:view3];<br/>
+[viewArr addObject:view4];<br/><br/><br/>
 
-tabTableView.headView = topHeadView;
-tabTableView.tabbarView = tabbarView;
-tabTableView.tabViewArray = viewArr;
-tabTableView.tabCount = 4;
+tabTableView.headView = topHeadView;<br/>
+tabTableView.tabbarView = tabbarView;<br/>
+tabTableView.tabViewArray = viewArr;<br/>
+tabTableView.tabCount = 4;<br/><br/><br/>
 
-tabTableView.backgroundColor = [UIColor clearColor];
-[self.view addSubview:tabTableView];
+tabTableView.backgroundColor = [UIColor clearColor];<br/>
+[self.view addSubview:tabTableView];<br/>
 
 
